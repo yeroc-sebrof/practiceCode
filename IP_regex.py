@@ -10,4 +10,4 @@ check = re.search("\A" + ipRange + "\." + ipRange + "\."
 
 print (check)
 
-print (None == check)
+print (check is None)
