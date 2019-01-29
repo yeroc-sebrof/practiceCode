@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 
     for (int i = 1; i < argc; i++) // For arg that isn't the executable being called
     {
-        cout << "\n" << "Reading " << argv[i] << "\n";
+        cout << "\n" << "Reading " << argv[i];
 
         currentFile = fopen(argv[i], "rb");
         if (currentFile==NULL) // If file didn't open in prev line
@@ -34,7 +34,7 @@ int main(int argc, char** argv)
         cout << "File " << argv[i] << " added successfully";
     }
 
-    cout << "Continuing with " << allFiles.size() << " files" << "\n";
+    cout << "\n\n" << "Continuing with " << allFiles.size() << " files" << "\n";
     
     // Get file sizes of those that exist
     for (int i=0; i < allFiles.size(); i++)
